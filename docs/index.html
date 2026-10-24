@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Competitor Listener</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --ink: #1c1c1a; --muted: #6b6b66; --line: #e4e3df;
+    --pricing: #b4441f; --feature: #2f6db5; --positioning: #7a4fb0; --legal: #5c6b2f; --noise: #8a8a85;
+    --ok: #2e7d4f; --bad: #b4441f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141413; --panel: #1d1d1b; --ink: #ecebe6; --muted: #9b9a94; --line: #2e2e2b;
+      --pricing: #e8805c; --feature: #73a7e6; --positioning: #b192dc; --legal: #a9b86d; --noise: #77776f;
+      --ok: #6cc08e; --bad: #e8805c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); font-size: 13px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 24px 0; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 12px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  select { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 8px;
+           padding: 6px 10px; font: inherit; font-size: 13px; }
+  .change { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--c);
+            border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
+  .tag { color: var(--c); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  .imp { border: 1px solid var(--line); border-radius: 99px; padding: 0 8px; }
+  .imp.high { border-color: var(--c); color: var(--c); }
+  .change h3 { font-size: 15px; margin: 6px 0 4px; font-weight: 600; }
+  .change ul { margin: 6px 0 0; padding-left: 18px; color: var(--muted); font-size: 13px; }
+  .change a { color: inherit; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 36px 0 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--panel);
+          border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  td { padding: 8px 12px; border-top: 1px solid var(--line); vertical-align: top; }
+  tr:first-child td { border-top: 0; }
+  .ok { color: var(--ok); } .bad { color: var(--bad); }
+  .empty { color: var(--muted); padding: 24px; text-align: center; border: 1px dashed var(--line); border-radius: 10px; }
+  @media (max-width: 520px) { td:nth-child(3) { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Competitor Listener</h1>
+    <p id="updated">Loading…</p>
+  </header>
+
+  <section class="stats" id="stats"></section>
+
+  <div class="filters">
+    <select id="f-comp" aria-label="Competitor"><option value="">All competitors</option></select>
+    <select id="f-cat" aria-label="Category"><option value="">All categories</option></select>
+    <select id="f-imp" aria-label="Importance">
+      <option value="">Any importance</option><option value="high">High</option>
+      <option value="medium">Medium+</option>
+    </select>
+  </div>
+
+  <section id="feed"></section>
+
+  <h2>Watched pages</h2>
+  <table id="status"></table>
+</main>
+
+<script>
+const RANK = { low: 0, medium: 1, high: 2 };
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ago = iso => {
+  if (!iso) return "never";
+  const m = Math.round((Date.now() - new Date(iso)) / 60000);
+  if (m < 60) return `${m}m ago`;
+  if (m < 1440) return `${Math.round(m / 60)}h ago`;
+  return `${Math.round(m / 1440)}d ago`;
+};
+
+let DATA = { changes: [], status: {} };
+
+function render() {
+  const comp = document.getElementById("f-comp").value;
+  const cat = document.getElementById("f-cat").value;
+  const imp = document.getElementById("f-imp").value;
+  const rows = DATA.changes.filter(c =>
+    (!comp || c.competitor === comp) && (!cat || c.category === cat) &&
+    (!imp || RANK[c.importance] >= RANK[imp]));
+
+  document.getElementById("feed").innerHTML = rows.length ? rows.map(c => `
+    <article class="change" style="--c: var(--${esc(c.category)})">
+      <div class="meta">
+        <span class="tag">${esc(c.category)}</span>
+        <span class="imp ${esc(c.importance)}">${esc(c.importance)}</span>
+        <span>${esc(c.competitor)} · <a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.page)}</a></span>
+        <span>· ${ago(c.detected_at)}</span>
+      </div>
+      <h3>${esc(c.summary)}</h3>
+      ${c.details?.length ? `<ul>${c.details.map(d => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}
+    </article>`).join("")
+    : `<div class="empty">No changes detected yet. The first run saves a baseline; changes appear after the next one.</div>`;
+}
+
+function init(data) {
+  DATA = data;
+  const changes = data.changes, status = Object.entries(data.status || {});
+  document.getElementById("updated").textContent = `Last run ${ago(data.generated_at)} · checks every 6 hours`;
+
+  const week = changes.filter(c => Date.now() - new Date(c.detected_at) < 7 * 864e5).length;
+  const high = changes.filter(c => c.importance === "high").length;
+  const healthy = status.filter(([, s]) => s.ok).length;
+  document.getElementById("stats").innerHTML = [
+    [changes.length, "changes logged"], [week, "in the last 7 days"],
+    [high, "high importance"], [`${healthy}/${status.length}`, "pages healthy"],
+  ].map(([v, l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
+
+  const fill = (id, vals) => document.getElementById(id).insertAdjacentHTML("beforeend",
+    [...new Set(vals)].sort().map(v => `<option>${esc(v)}</option>`).join(""));
+  fill("f-comp", changes.map(c => c.competitor));
+  fill("f-cat", changes.map(c => c.category));
+
+  document.getElementById("status").innerHTML = status.map(([slug, s]) => `
+    <tr><td>${esc(slug)}</td>
+        <td class="${s.ok ? "ok" : "bad"}">${s.ok ? "OK" : "Error"}</td>
+        <td>${s.ok ? `checked ${ago(s.checked_at)}` : esc(s.error)}</td></tr>`).join("")
+    || `<tr><td>No runs yet.</td></tr>`;
+
+  render();
+}
+
+["f-comp", "f-cat", "f-imp"].forEach(id => document.getElementById(id).addEventListener("change", render));
+fetch("changes.json", { cache: "no-store" })
+  .then(r => r.ok ? r.json() : { changes: [], status: {} })
+  .catch(() => ({ changes: [], status: {} }))
+  .then(init);
+</script>
+</body>
+</html>

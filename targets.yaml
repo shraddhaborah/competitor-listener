@@ -1,0 +1,34 @@
+# Which competitor pages to watch.
+# Onboarding a new competitor = add a block here. No code changes.
+#
+# Per-page options:
+#   selector:  CSS selector to focus on just the part of the page that matters
+#   ignore:    list of CSS selectors to strip before diffing (banners, widgets)
+#   render_js: true for pages that only render content with JavaScript
+
+settings:
+  min_changed_chars: 40     # ignore diffs smaller than this (price changes always count)
+  alert_threshold: medium   # open an alert for changes at or above: low | medium | high
+
+competitors:
+  - name: Linear
+    pages:
+      - name: Pricing
+        url: https://linear.app/pricing
+      - name: Changelog
+        url: https://linear.app/changelog
+
+  - name: Notion
+    pages:
+      - name: Pricing
+        url: https://www.notion.com/pricing
+
+  - name: Vercel
+    pages:
+      - name: Pricing
+        url: https://vercel.com/pricing
+
+  - name: Supabase
+    pages:
+      - name: Pricing
+        url: https://supabase.com/pricing

@@ -1,0 +1,47 @@
+name: Listen for competitor changes
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours, off the top of the hour
+  workflow_dispatch:          # "Run workflow" button for demos
+
+permissions:
+  contents: write   # commit snapshots and the change log
+  issues: write     # open an issue per important change
+
+concurrency:
+  group: listener
+  cancel-in-progress: false
+
+jobs:
+  listen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run listener
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional; rules-based triage without it
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}   # optional Slack/Discord webhook
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m listener.run
+
+      - name: Commit snapshots and change log
+        run: |
+          git config user.name  "competitor-listener[bot]"
+          git config user.email "competitor-listener[bot]@users.noreply.github.com"
+          git add snapshots docs/changes.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "listener: snapshot $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
