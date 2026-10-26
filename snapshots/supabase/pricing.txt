@@ -6,7 +6,7 @@ Solutions
 Pricing
 Docs
 Blog
-113.9K
+114K
 Sign in
 Start your project
 Open main menu
@@ -1002,6 +1002,7 @@ System Status
 Become a Partner
 Partner Catalog
 Knowledge Base
+FAQs
 Brand Assets
 Security & Compliance
 Regions
