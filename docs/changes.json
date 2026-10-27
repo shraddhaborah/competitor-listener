@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-10-26T22:38:00+00:00",
+  "generated_at": "2026-10-27T04:59:14+00:00",
   "changes": [
+    {
+      "detected_at": "2026-10-27T04:59:13+00:00",
+      "competitor": "Notion",
+      "page": "Pricing",
+      "url": "https://www.notion.com/pricing",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (7 lines added, 11 removed).",
+      "details": [
+        "+ Limited for 2+ members",
+        "+ On the Free plan, you can upload images, videos and file attachments up to 5 MB each. Upgrade to a paid plan to upload files up to 5 GB each",
+        "- Unlimited for individuals"
+      ],
+      "source": "rules",
+      "lines_added": 7,
+      "lines_removed": 11,
+      "alerted": true
+    },
     {
       "detected_at": "2026-10-26T12:54:59+00:00",
       "competitor": "Supabase",
@@ -23,27 +41,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-10-26T22:37:57+00:00",
+      "checked_at": "2026-10-27T04:59:11+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-10-26T22:37:58+00:00",
+      "checked_at": "2026-10-27T04:59:11+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-10-26T22:37:58+00:00",
+      "checked_at": "2026-10-27T04:59:12+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-10-26T22:37:58+00:00",
+      "checked_at": "2026-10-27T04:59:13+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-10-26T22:37:59+00:00",
+      "checked_at": "2026-10-27T04:59:13+00:00",
       "ok": true
     }
   }
