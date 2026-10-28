@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-10-28T12:47:17+00:00",
+  "generated_at": "2026-10-28T22:31:45+00:00",
   "changes": [
+    {
+      "detected_at": "2026-10-28T22:31:45+00:00",
+      "competitor": "Vercel",
+      "page": "Pricing",
+      "url": "https://vercel.com/pricing",
+      "category": "pricing",
+      "importance": "high",
+      "summary": "Pricing-related text changed (4 lines added, 0 removed).",
+      "details": [
+        "+ Custom Monitors",
+        "+ —"
+      ],
+      "source": "rules",
+      "lines_added": 4,
+      "lines_removed": 0,
+      "alerted": true
+    },
     {
       "detected_at": "2026-10-27T04:59:13+00:00",
       "competitor": "Notion",
@@ -41,27 +58,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-10-28T12:47:14+00:00",
+      "checked_at": "2026-10-28T22:31:42+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-10-28T12:47:15+00:00",
+      "checked_at": "2026-10-28T22:31:43+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-10-28T12:47:15+00:00",
+      "checked_at": "2026-10-28T22:31:43+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-10-28T12:47:16+00:00",
+      "checked_at": "2026-10-28T22:31:44+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-10-28T12:47:16+00:00",
+      "checked_at": "2026-10-28T22:31:45+00:00",
       "ok": true
     }
   }
