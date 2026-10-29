@@ -1,6 +1,40 @@
 {
-  "generated_at": "2026-10-29T12:55:50+00:00",
+  "generated_at": "2026-10-29T22:43:28+00:00",
   "changes": [
+    {
+      "detected_at": "2026-10-29T22:43:28+00:00",
+      "competitor": "Vercel",
+      "page": "Pricing",
+      "url": "https://vercel.com/pricing",
+      "category": "pricing",
+      "importance": "high",
+      "summary": "Pricing-related text changed (5 lines added, 0 removed).",
+      "details": [
+        "+ Vercel CI",
+        "+ Beta"
+      ],
+      "source": "rules",
+      "lines_added": 5,
+      "lines_removed": 0,
+      "alerted": true
+    },
+    {
+      "detected_at": "2026-10-29T22:43:26+00:00",
+      "competitor": "Linear",
+      "page": "Pricing",
+      "url": "https://linear.app/pricing",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (82 lines added, 0 removed).",
+      "details": [
+        "+ Included",
+        "+ Included"
+      ],
+      "source": "rules",
+      "lines_added": 82,
+      "lines_removed": 0,
+      "alerted": true
+    },
     {
       "detected_at": "2026-10-28T22:31:45+00:00",
       "competitor": "Vercel",
@@ -58,27 +92,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-10-29T12:55:48+00:00",
+      "checked_at": "2026-10-29T22:43:25+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-10-29T12:55:48+00:00",
+      "checked_at": "2026-10-29T22:43:26+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-10-29T12:55:49+00:00",
+      "checked_at": "2026-10-29T22:43:27+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-10-29T12:55:49+00:00",
+      "checked_at": "2026-10-29T22:43:27+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-10-29T12:55:49+00:00",
+      "checked_at": "2026-10-29T22:43:28+00:00",
       "ok": true
     }
   }
