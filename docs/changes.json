@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-10-30T12:49:12+00:00",
+  "generated_at": "2026-10-30T22:15:39+00:00",
   "changes": [
+    {
+      "detected_at": "2026-10-30T22:15:37+00:00",
+      "competitor": "Linear",
+      "page": "Changelog",
+      "url": "https://linear.app/changelog",
+      "category": "pricing",
+      "importance": "high",
+      "summary": "Pricing-related text changed (1 lines added, 1 removed).",
+      "details": [
+        "+ Loops are available today on all plans and use AI credits. To help you get started and understand usage, we’re giving your workspace $20 per",
+        "- Loops are available today on Business and Enterprise plans and use AI credits. To help you get started and understand usage, we’re giving yo"
+      ],
+      "source": "rules",
+      "lines_added": 1,
+      "lines_removed": 1,
+      "alerted": true
+    },
     {
       "detected_at": "2026-10-29T22:43:28+00:00",
       "competitor": "Vercel",
@@ -92,27 +109,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-10-30T12:49:10+00:00",
+      "checked_at": "2026-10-30T22:15:35+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-10-30T12:49:11+00:00",
+      "checked_at": "2026-10-30T22:15:36+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-10-30T12:49:11+00:00",
+      "checked_at": "2026-10-30T22:15:37+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-10-30T12:49:11+00:00",
+      "checked_at": "2026-10-30T22:15:38+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-10-30T12:49:12+00:00",
+      "checked_at": "2026-10-30T22:15:38+00:00",
       "ok": true
     }
   }

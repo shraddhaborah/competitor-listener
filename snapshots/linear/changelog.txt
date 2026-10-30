@@ -1105,7 +1105,7 @@ Remaining time unknown
 2
 ×
 Loops run at the team and workspace level, with shared visibility and control. Anyone with access can review their instructions, see how they are configured, and inspect what happened during each run.
-Loops are available today on Business and Enterprise plans and use AI credits. To help you get started and understand usage, we’re giving your workspace $20 per seat in promotional credits. These credits are applied automatically to runs, and expire on August 20, 2026.
+Loops are available today on all plans and use AI credits. To help you get started and understand usage, we’re giving your workspace $20 per seat in promotional credits. These credits are applied automatically to runs, and expire on August 20, 2026.
 Read the
 blog post
 to learn more.

@@ -19,6 +19,7 @@ Unlimited members
 250 issues
 Agent platform
 Linear Agent
+Loops
 Get started
 Basic
 $10 per user/month
@@ -28,7 +29,6 @@ All Free features +
 Unlimited issues
 Unlimited file uploads
 Admin roles
-Loops
 Get started
 Business
 $16 per user/month
@@ -134,7 +134,6 @@ Coding sessions
 Included
 Loops
 **
-Not included
 Included
 Code Intelligence
 Not included
