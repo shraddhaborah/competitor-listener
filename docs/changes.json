@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T22:15:39+00:00",
+  "generated_at": "2026-10-31T05:35:29+00:00",
   "changes": [
     {
       "detected_at": "2026-10-30T22:15:37+00:00",
@@ -109,27 +109,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-10-30T22:15:35+00:00",
+      "checked_at": "2026-10-31T05:35:27+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-10-30T22:15:36+00:00",
+      "checked_at": "2026-10-31T05:35:27+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-10-30T22:15:37+00:00",
+      "checked_at": "2026-10-31T05:35:28+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-10-30T22:15:38+00:00",
+      "checked_at": "2026-10-31T05:35:28+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-10-30T22:15:38+00:00",
+      "checked_at": "2026-10-31T05:35:29+00:00",
       "ok": true
     }
   }
