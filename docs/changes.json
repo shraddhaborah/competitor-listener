@@ -1,6 +1,23 @@
 {
-  "generated_at": "2026-11-02T15:42:46+00:00",
+  "generated_at": "2026-11-03T00:55:25+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-03T00:55:25+00:00",
+      "competitor": "Supabase",
+      "page": "Pricing",
+      "url": "https://supabase.com/pricing",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (31 lines added, 0 removed).",
+      "details": [
+        "+ Yes. Spend caps are on by default on the Pro Plan. You can turn spend caps off for usage beyond the Plan limits to pay as you grow.",
+        "+ Spend caps are on by default and you need to toggle them off from your dashboard to enable pay as you grow pricing."
+      ],
+      "source": "rules",
+      "lines_added": 31,
+      "lines_removed": 0,
+      "alerted": true
+    },
     {
       "detected_at": "2026-10-30T22:15:37+00:00",
       "competitor": "Linear",
@@ -109,27 +126,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-02T15:42:43+00:00",
+      "checked_at": "2026-11-03T00:55:21+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-02T15:42:44+00:00",
+      "checked_at": "2026-11-03T00:55:22+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-02T15:42:44+00:00",
+      "checked_at": "2026-11-03T00:55:23+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-02T15:42:45+00:00",
+      "checked_at": "2026-11-03T00:55:23+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-02T15:42:46+00:00",
+      "checked_at": "2026-11-03T00:55:24+00:00",
       "ok": true
     }
   }
