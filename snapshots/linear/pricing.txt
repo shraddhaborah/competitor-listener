@@ -276,9 +276,10 @@ Download
 Documentation
 Docs
 Developers
-Status
 Enterprise
 Startups
+Status
+Legal
 Connect
 Contact us
 Community
@@ -288,9 +289,11 @@ YouTube
 Legal
 Privacy
 Terms
+Other Policies
 DPA
 AUP
 Privacy
 Terms
+Other Policies
 DPA
 AUP
