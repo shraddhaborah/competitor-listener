@@ -1,6 +1,60 @@
 {
-  "generated_at": "2026-11-05T06:40:23+00:00",
+  "generated_at": "2026-11-05T19:54:04+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-05T19:54:04+00:00",
+      "competitor": "Supabase",
+      "page": "Pricing",
+      "url": "https://supabase.com/pricing",
+      "category": "positioning",
+      "importance": "low",
+      "summary": "Minor copy change (30 lines added, 1 removed).",
+      "details": [
+        "+ Main menu",
+        "+ Product",
+        "- Open main menu"
+      ],
+      "source": "rules",
+      "lines_added": 30,
+      "lines_removed": 1,
+      "alerted": false
+    },
+    {
+      "detected_at": "2026-11-05T19:54:03+00:00",
+      "competitor": "Vercel",
+      "page": "Pricing",
+      "url": "https://vercel.com/pricing",
+      "category": "positioning",
+      "importance": "low",
+      "summary": "Minor copy change (2 lines added, 4 removed).",
+      "details": [
+        "+ Trace Retention",
+        "+ 14 days of traces",
+        "- Beta"
+      ],
+      "source": "rules",
+      "lines_added": 2,
+      "lines_removed": 4,
+      "alerted": false
+    },
+    {
+      "detected_at": "2026-11-05T19:54:03+00:00",
+      "competitor": "Linear",
+      "page": "Changelog",
+      "url": "https://linear.app/changelog",
+      "category": "pricing",
+      "importance": "high",
+      "summary": "Pricing-related text changed (368 lines added, 83 removed).",
+      "details": [
+        "+ November 5, 2026",
+        "+ Mobile Diffs",
+        "- July 20, 2026"
+      ],
+      "source": "rules",
+      "lines_added": 368,
+      "lines_removed": 83,
+      "alerted": true
+    },
     {
       "detected_at": "2026-11-03T00:55:25+00:00",
       "competitor": "Supabase",
@@ -126,27 +180,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-05T06:40:22+00:00",
+      "checked_at": "2026-11-05T19:54:01+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-05T06:40:22+00:00",
+      "checked_at": "2026-11-05T19:54:01+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-05T06:40:22+00:00",
+      "checked_at": "2026-11-05T19:54:03+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-05T06:40:23+00:00",
+      "checked_at": "2026-11-05T19:54:03+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-05T06:40:23+00:00",
+      "checked_at": "2026-11-05T19:54:03+00:00",
       "ok": true
     }
   }

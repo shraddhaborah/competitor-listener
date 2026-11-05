@@ -9,7 +9,36 @@ Blog
 114.5K
 Sign in
 Start your project
-Open main menu
+Main menu
+Product
+Developers
+Solutions
+Pricing
+Docs
+Blog
+Product
+Database
+Fully portable Postgres database
+Authentication
+User Management out of the box
+Storage
+Serverless storage for any media
+Edge Functions
+Deploy code globally on the edge
+Compute
+Private Alpha
+Sandboxes and backend services
+Realtime
+Synchronize and broadcast events
+Modules
+Vector
+AI toolkit to manage embeddings
+Cron
+Schedule and manage recurring Jobs
+Queues
+Durable Message Queues with guaranteed delivery
+Features
+Explore everything you can do with Supabase.
 Predictable pricing,
 designed to scale
 Start building for free, collaborate with your team, then scale to millions of users

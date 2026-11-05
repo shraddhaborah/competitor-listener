@@ -18,6 +18,441 @@ From the team
 From the community
 Press
 Search…
+November 5, 2026
+Mobile Diffs
+Diffs, Linear’s fast and focused review experience, is now available for iOS and Android.
+Here’s what you can do from your phone:
+Understand changes with Guided Reviews
+Start on mobile, continue on desktop
+See what needs review in your inbox
+View preview links
+Work with review and cloud coding agents
+Merge approved changes
+Try it from the Reviews tab in your Linear mobile app, or learn more in our
+blog post
+.
+If you’re not yet reviewing in Linear, get started
+here.
+Fixes
+Agent
+Suggested next steps in agent replies now show in one row when they fit, and stack in one column when they don’t, instead of wrapping onto a partial second row
+Agent
+Code diffs beside an Agent chat no longer cut off the right side of files in a narrow panel
+Agent
+Fixed agent chats started in the split view no longer going missing from the sidebar when you navigate away or close the tab right after sending
+Agents
+File paths mentioned in the agent input no longer show spelling underlines
+Android
+Fixed downloads that restart after the app closes no longer leaving extra files in the Downloads folder
+Android
+Fixed document notification links opened from outside the app now open the document
+API
+Replacing an expired app developer token now keeps the previous token’s scopes
+Board
+Fixed going back to a board with sub-grouping now returning you to the same horizontal scroll position, not the leftmost column
+Board
+Fixed cards dropped at the top of a scrolled board column staying in view instead of landing above the visible area
+Coding sessions
+Fixed files added to a coding environment, such as shell scripts and
+.npmrc
+, now getting syntax highlighting based on their file name
+Coding sessions
+Coding sessions that use workspace credentials can post Linear comments again
+Custom views
+Fixed the Save button moving off screen when you edit a view whose advanced filter has long names
+Customer requests
+Undo now removes a customer request you just added from an issue or project instead of undoing the action before it
+Customer Requests
+Undo now reverts an edit to a customer request on an issue or project page, including a removed or changed source link, and removes a customer created along with a new request
+Customer Requests
+Fixed links to replies in customer request threads not opening the request panel and highlighting the reply
+Customers
+Project customer pills now show customer logos and names immediately instead of a placeholder until hovered
+Customers
+Fixed customer requests on duplicate issues or paused projects disappearing when grouping customer requests by status type
+Cycles
+Saving the same next cycle start date again no longer moves upcoming cycles by a week
+Cycles
+Moving the next cycle’s start date earlier no longer leaves the active cycle overlapping it by an hour around DST changes
+Desktop
+Fixed a flicker on the new tab button after opening a tab
+Diffs
+Opening or closing the agent sidebar on a pull request no longer blanks the page on slow connections
+Diffs
+Fixed marking a file reviewed on short pull requests now keeps the next file’s “Reviewed” checkbox under the pointer
+Diffs
+Fixed received pull request reviews sometimes appearing more than once
+Diffs
+Fixed review request notifications sent when a draft pull request is published to name the person who published it, not the pull request author
+Diffs
+Fixed Codex missing from the reviewer dropdown
+Diffs
+Fixed pull request actions such as merge, close, and auto-merge failing for guests with a connected GitHub account
+Diffs
+Fixed draft pull requests requiring reviewer selection when no reviewers are available
+Documents
+Fixed creating an issue from a selection in a cycle document not creating it in the cycle’s team
+Documents
+Fixed a duplicate scrollbar appearing on documents opened from a change notification in Inbox
+Editor
+Clicking anywhere in the Leave Feedback box now focuses the text field
+Editor
+Fixed video controls in small players not matching the player’s rounded bottom corners
+Editor
+Copying a list and pasting it as plain text now keeps the list numbers and bullets
+Editor
+Pressing Enter at the end of a collapsible section title now always creates a new line instead of moving the cursor to the next block
+Editor
+Fixed wide tables in issue inline comments not always scrolling horizontally
+Email
+Replies to synced email threads no longer include quoted history from mail clients that use translated header labels, such as German Outlook
+Email intake
+Email replies whose text starts with “On” no longer lose that text
+Exports
+Fixed CSV exports not listing issues in the order the view shows them when groups have a custom order
+Filters
+Fixed the “options not matching any…” action in grouped filter menus, such as Team, not sitting in its own section at the bottom of the list
+Front
+The Front integration now allows multiple labels from multi-select label groups
+GitHub
+You can now dismiss the GitHub sync error on an issue when creating the linked GitHub issue failed
+GitHub
+Manually added GitHub commit webhooks now work when their content type is set to
+application/x-www-form-urlencoded
+GitHub
+Fixed mentioning a project ID such as P-ENG-123 in a pull request title no longer linking the pull request
+Inbox
+Issue due date notifications indicate when the issue is due (e.g. “Due today”) instead of a generic “Due date” label
+Inbox
+Fixed filtering the Inbox by project now includes pull request notifications whose linked issues belong to that project
+Inbox
+Fixed the find field animation in the inbox so it no longer shrinks as it closes
+Inbox
+Fixed ↑/↓ and j/k scrolling the diff instead of moving through the Inbox when a review’s diff tab is open
+Inbox
+Fixed “Agent finished” notifications for issues with a GitLab merge request opening the issue instead of the merge request
+Initiatives
+Fixed the initiatives overview crashing when a saved grouping preference was invalid
+Insights
+Fixed Insights charts timing out in workspaces with many teams
+Insights
+Fixed drilling into a weekly or monthly due date insight dropping or adding issues at the period edges in timezones behind UTC
+Insights
+Fixed the measure picker to always separate bar chart measures from scatter plot measures
+Insights
+Fixed scatter plots split by labels or customers to count each issue once in their statistics
+Insights
+Fixed insights sliced by customer to count archived issues under their customers instead of “No customer” when archived issues are included
+Insights
+Fixed issues whose customer requests have no customer to show as “Unknown customer” instead of a second “No customer” row when slicing by customer
+Insights
+Fixed scatter plot insights that failed to load when they had a very large number of data points
+Integrations
+Password fields show a masked placeholder by default
+iOS
+Fixed the Merge button in the code review toolbar being truncated on iPhone
+iOS
+Canceling sign-in in the browser no longer shows a login error
+iOS
+Project and initiative reminder notifications now show the reminder icon in the inbox
+iOS
+The inbox tab no longer shows an unread dot in the expanded sidebar when all notifications are read
+iOS
+Loops created by Linear Agent now show as a Loop card instead of an internal ID
+iOS
+Fixed deleted issues not disappearing from issue lists right away
+iOS
+Fixed issue titles and subtitles in the Delegated section of My Issues not matching the text size of the issue list below them
+iOS
+The iOS app no longer shows notifications for the agent chat you are viewing
+iOS
+Fixed letters below the baseline being cut off in the team view picker
+Issues
+Changing the cycle or status of issues in a manually ordered list no longer changes their order
+Jira
+Jira sync no longer drops labels that belong to the same multi-select label group
+Linear Agent
+Branches the Linear Agent creates while coding from an issue, including Loop runs, now follow the workspace’s branch naming format for that issue
+Linear Agent
+Linear Agent can now convert links already attached to an issue into customer requests, like the in-app “Convert to customer request” action
+Linear Agent
+Fixed the agent’s thinking indicator not staying below a message you send while it’s still working, so it’s clear the agent hasn’t finished
+Linear Agent
+New Linear Agent chats keep the coding environment you last picked, including after a refresh
+Linear Agent
+Fixed action label alignment and entity choices remaining visible after submission
+Loops
+A loop that waits on one approval no longer sends the owner a new approval message each time it resumes
+Loops
+Loops now always reply when you mention Linear in a loop’s comment thread
+Loops
+People who can edit a loop can now delete the comments it posted from any chat or the comment menu
+Loops
+Loop pages now show which team a triage trigger watches, and Team access shows the team’s name instead of “This team”
+Loops
+Fixed the Run history tab no longer showing as selected when a single run opens on its own page
+Loops
+Fixed the “configured repositories” link in a Loop’s code access setting to look like a link and open during Loop creation
+Loops
+Loops can now delete comments they posted
+MCP
+Reconnecting or adding an MCP connector on mobile Safari now opens the provider’s authorization page
+OAuth
+Fixed client-credentials tokens granting access to public teams outside the app user’s selected teams
+Onboarding
+The create workspace form now flags names containing a URL or domain before submitting
+Projects
+Fixed the project menu in the agent sidebar, Inbox, and search results to match the menu on the project page, including “Show description history”
+Projects
+Starting a project without a start date now uses the current date in the lead team’s timezone instead of the UTC date
+Projects
+The footer border in the new project modal now matches the modal border
+Reviews
+Fixed the markdown preview now expanding long code blocks and collapsed sections that hide a change
+Reviews
+Fixed pull request activity no longer showing a Codex review as running after Codex stopped without finishing it
+Reviews
+On narrow review pages, header controls now wrap instead of overlapping, and Guide progress text is hidden
+Reviews
+Fixed notifications stopping for users who need to reconnect GitHub with code access, matching the disabled notification settings
+Reviews
+Search in reviews no longer misses matches in code shown in the Guide
+SCIM
+Fixed SCIM PATCH requests with an invalid
+userName
+partially applying an earlier email change in the same request
+Sentry
+Reassigning a Linear issue linked to a Sentry issue now assigns the matching Sentry user when Sentry’s user record has an empty or incomplete list of additional emails
+Settings
+Tooltips on disabled team permission options no longer cover the menu’s other options
+Settings
+Fixed long commit signing key names overflowing the Signed commits setting
+Settings
+Fixed the loading indicator on the “Enable integration” button in AI settings not matching the button’s text color
+Slack
+Fixed Slack notifications no longer linking a comment author through a Slack account from another workspace or a stale connection
+Slack
+Screenshots in Linear Agent replies in Slack now show as images instead of links
+Slack
+Files in Slack Connect messages no longer go missing from synced comments when Slack briefly fails to return their details
+Slack
+Slack now delivers notifications for long comments on reviews, with a shortened excerpt and a link to the full comment
+Teams
+Deleting a sub-team inside a private team’s boundary now stays private if restored
+Teams
+Fixed SCIM allowing team names that bypassed normal name restrictions
+Templates
+Sub-issues created from an issue template now keep their saved status instead of switching to Triage on triage-enabled teams
+Templates
+Fixed undo after applying a template to an issue not keeping the labels the issue already had
+Triage
+Fixed timestamps in crowded triage rows no longer getting cut off at narrow widths
+Views
+Fixed the group ordering panel now placing a newly shown group in the same position as the list and board, instead of at the bottom
+Improvements
+Agent
+Review cards in agent chat show the line count next to the status
+Agent
+Coding environments can open beside Agent chats, and environment settings now have an Agent side panel
+Agent
+Going to actions in Agent split views and slide-ins now shows a right arrow instead of an external link icon
+Agent
+Improved double-clicking the divider in the Agent split view to widen the chat in agent sessions or the opened item in chats, as far as dragging would
+AI
+Modifying coding sessions or Loops access at the workspace level now asks for confirmation and explains what happens to work in progress
+Android
+You can now open an issue’s project from the issue menu
+Android
+Reviews now show who opened pull requests from GitHub accounts and bots that aren’t linked to a Linear user
+Asks
+Asks web forms show selected labels in multi-select label groups as removable chips. Rows no longer move when you select labels
+Code review
+Pull request descriptions are now always shown in full, without a “Description” header
+Code Review
+Image, video, audio, and font diffs stack the previous version above the new one on small screens
+Code Review
+Audio files in diffs can now be played directly in the diff
+Coding agents
+Added the ability for coding agents to re-run failed GitHub Actions jobs on their pull requests
+Customers
+Customer logos have crisper edges against light and dark backgrounds
+Dashboards
+Default names of project and initiative insights that count issues, customers, or projects now indicate whose property they group by, such as “Issue count by project status type”
+Dashboards
+You can add an insight about projects to a dashboard from the insight menu of a project list
+Dashboards
+Dashboard and widget filters no longer offer “Current user” or “My teams”, since every reader of a dashboard sees the same results. Team filters saved with “My teams” show the teams of the user who saved them, such as “Paul’s teams”
+Dashboards
+New widgets now appear at the top of a dashboard instead of the bottom
+Desktop
+Cmd/Ctrl Click
+on a page that is already open in a desktop tab now switches to that tab. Shift-click to open a new tab.
+Diffs
+Added copying selected lines from pull request diffs on iOS
+Diffs
+On comments from agents like Codex, Send to agent now sits in the comment toolbar instead of the overflow menu
+Diffs
+Merging a pull request opened by Linear or another bot no longer asks for confirmation when no one owns it
+Diffs
+Test and generated file diffs now show by default when they are the only changes in a pull request
+Diffs
+Added an option to expand or collapse all unchanged code to the file menus in Diffs, with keyboard shortcut
+Alt E
+Diffs
+Improved recognition of Netlify preview links from GitHub checks
+Diffs
+Click the draft comment count in the “Submit without draft comments?” warning to see your draft comments in Diff
+Diffs
+Added “Go to file” (
+Cmd/Ctrl P
+), “Go to symbol” (
+Shift Cmd/Ctrl E
+), and “Go to Guide section” (
+Alt Cmd/Ctrl G
+) commands to Diffs
+Diffs
+The reviewer picker now prioritizes people within working hours in their local time zone when requesting a review
+Diffs
+Made GitHub links and review requests from email and Slack open Guide automatically when a guide is available
+Diffs
+Improved the preview button on pull requests, which is now split into a button group with clear “Open one” and “See more” sections
+Diffs
+Improved the preview button on pull requests, which now shows the name of the preview it opens
+Diffs
+Improved the preview button to indicate when its preview is behind the latest commit
+Documents
+Right-click a document group to collapse or expand it, or all groups at once
+Editor
+Added support for selecting non-adjacent table cells with
+Cmd/Ctrl Click
+Editor
+Moving the caret up and down through a table now keeps its horizontal position
+Editor
+Improved dragging images and files into editors, so drops go to the nearest editor from anywhere on the page and drop targets are more consistent
+Editor
+Timestamps like in a comment or description with a single video now jump the video to that time when clicked
+Editor
+Formatting a partially bold, italic, underlined, or struck-through selection now applies the format to the whole selection instead of removing it
+Editor
+Added a Copy link action and button to all file cards in the editor, not only PDFs
+Insights
+Initiative insights can now be added to a dashboard from their menu, like issue insights
+Insights
+Improved insights chart; the template and the copies sub-teams inherit from it as one template, and drilling into it lists the same issues or projects
+iOS
+You can now move a favorite into a folder from its context menu on the Favorites tab
+iOS
+Improved ability to copy a document as Markdown from the document menu on iPhone
+Issues
+Improved due dates in the issue sidebar, so they show as “Oct 9” instead of the full localized date (e.g. 10/09/2026)
+Labels
+Label menus list each selected label from a multi-select group as its own row
+Loops
+The loop run list loads faster because it reads what each run did instead of loading every run’s transcript
+Loops
+Loop runs that write a summary or notify someone no longer fold into runs without changes
+Loops
+Workspace admins can turn on “Workspace administration” in a loop’s settings so the loop can perform workspace administration actions, starting with listing and unsuspending suspended users
+Loops
+Failed loop runs without error details now show a clearer message
+Loops
+Added Resume and Run again actions to failed loop runs
+Loops
+Loops can now notify more than 10 people in a single run
+Loops
+Loop runs blocked by the AI model provider’s cybersecurity policy now say so in run history, instead of showing a generic failure
+Loops
+The Security alerts loop template can now trigger on more than one label or project, or on the issue’s content
+Loops
+The Featured tab in the loop template picker now shows up to eight templates
+Loops
+Five more loop templates are now generally available: Update issue priority based on demand, Draft customer follow-ups, Maintain changelog, Respond to unanswered questions, and Propose test cases
+Members
+The Members page keeps your search when you open a profile and return
+Notifications
+Improved pull request titles in notification emails to look like links
+Projects
+Project leads and members can get an Inbox notification when a document is added to a project they’re subscribed to
+Reviews
+Reviews tab tooltips now show how many reviews are waiting for you or ready to merge
+Reviews
+Copying a pull request’s GitHub URL now confirms with “Copied GitHub URL to clipboard,” so it’s distinct from copying the Linear review link
+Reviews
+Improved filtering of the Reviews list by approver, change requests, number of approvals, checks, conflicts, merge status, size, and the project, team, and priority of linked issues
+Reviews
+Reviewed files in the Diff tab’s file list now show a gray check, matching the Guide
+Reviews
+Line counts in diffs and reviews now use your locale’s number format, such as +87,858
+Reviews
+Improved the Guide to show which files you have marked as reviewed, both in each section’s file list and in the outline
+Reviews
+The preview button now sits to the left of the merge and review actions in the pull request header
+Reviews
+Hover a check’s status icon in the pull request checks menu to see its status
+Reviews
+Removed the full window buttons from the review header. Press
+.
+to toggle full window and
+Escape
+to exit
+Reviews
+Reviews now remembers your last tab, other than All, and opens it in new windows
+Reviews
+Added a display option to show GitHub labels on the reviews list
+Reviews
+Hovering a GitHub team in a pull request’s reviewers now shows the team’s members
+Search
+Improved reviews search results, which can now be filtered by author, reviewers, repository, and opened, updated, merged, or closed date
+Settings
+The “Revoke access” action for workspace applications now always shows an ellipsis since it opens a confirmation dialog
+Slack
+Synced Slack threads now include the root message and no longer show a duplicate attachment in the resources section
+Team settings
+Simplified the issue sharing copy in team security settings
+Triage
+Improved triage responsibility schedules now show who is covering a shift when a connected schedule annotates overrides
+Views
+Added entity-specific labels and a no-results state to the pinned views menu
+API
+Comment mutations now return a normal “not found” input error when given an ID that isn’t a UUID, instead of an internal server error
+list_cycles
+and
+list_users
+accept a team name, key, or ID
+Added OAuth apps that act as an app user can request the
+customView:read
+scope to read custom views shared with the whole workspace
+Added
+documentCreated
+to
+OtherNotificationType
+for app user notification webhooks
+Creating comments on a single issue is now limited to 200 per minute. Requests over the limit fail with
+RATELIMITED
+Filters that combine
+null: false
+with another condition on an optional relation, such as “has a creator or the creator is me,” return the correct results
+Customer tier filters accept
+null
+to match customers without a tier
+Changed GraphQL request rate limit errors to return HTTP 429 instead of 400. The response body still contains the
+RATELIMITED
+error code. Note that the
+Retry-After
+header gives the number of seconds to wait before you retry
+airbyteIntegrationConnect
+now rejects API keys that are not 40 letters and digits (optionally prefixed with
+lin_integration_
+)
+MCP server
+The Linear MCP server now gives clients default instructions on how to use its tools effectively
+list_issues
+can now filter issues by completion date with
+completedAt
+, accepting an ISO-8601 date or duration such as
+-P7D
+The read-only MCP endpoint is now listed in the MCP registry
+You can now assign users by part of their name, and a name that matches more than one user returns the possible matches
 October 22, 2026
 More ways to run and share Loops
 Elapsed
@@ -1058,113 +1493,6 @@ CycleCreate
 and
 CycleUpdate
 now prevent overlapping schedules and validate neighboring cycles using their dates.
-July 20, 2026
-Introducing Loops
-Elapsed
-Remaining time unknown
-0.25
-×
-0.5
-×
-0.75
-×
-1
-×
-1.25
-×
-1.5
-×
-1.75
-×
-2
-×
-Loops are a new way for Linear Agent to take on recurring work for your team.
-Describe the job in plain language and then choose whether it should run on a schedule or in response to an event. From there, Loops use context from your workspace and connected tools to decide on the next best action.
-For example:
-Review incoming issues, research root causes, and dispatch to coding agents
-Create and coordinate follow-up work based on unstructured notes, like meeting transcripts or incident reports
-Keep launch plans and project specifications up-to-date
-See more ways to use Loops in the
-docs
-Elapsed
-Remaining time unknown
-0.25
-×
-0.5
-×
-0.75
-×
-1
-×
-1.25
-×
-1.5
-×
-1.75
-×
-2
-×
-Loops run at the team and workspace level, with shared visibility and control. Anyone with access can review their instructions, see how they are configured, and inspect what happened during each run.
-Loops are available today on all plans and use AI credits. To help you get started and understand usage, we’re giving your workspace $20 per seat in promotional credits. These credits are applied automatically to runs, and expire on August 20, 2026.
-Read the
-blog post
-to learn more.
-Fixes
-Android
-Added a fallback page for auth redirects so users can reopen the app when browser handoff fails
-Asks
-Fixed Asks created by mentioning the Asks agent in private Slack channels weren’t syncing the originating thread to the issue
-Cycles
-Fixed archived cycles getting stuck behind persisted label and other view filters with no visible way to clear them
-Diffs
-Pull requests with more than 50 commits now loading up to 450 commits
-Documents
-Private team document templates now consistently appearing in the template selector
-Editor
-Fixed checklists pasted from Google Docs rendering incorrectly
-Email
-Prevented notification emails from being sent to deactivated users
-Inbox
-Fixed email intake issues not appearing in the assignee’s inbox when the intake template auto-assigned the issue back to the sender
-Integrations
-Fixed GitHub Enterprise Cloud installation webhooks routing to the wrong workspace region before the installation was known to Linear
-Integrations
-Fixed GitHub Enterprise Cloud setup showing a generic error when an IP allow list blocked Linear, with clearer guidance on allowing Linear IPs
-Notifications
-Fixed duplicate Slack notifications when a newly created issue is added to a view with Slack notifications enabled
-Projects
-Fixed project pages crashing when a graph tooltip referenced a stale date
-Pulse
-Added an unsubscribe action for Pulse items shown through team project update subscriptions
-Triage Intelligence
-Fixed Triage Intelligence no longer requiring destination teams to have workspace-wide scope to be eligible for suggestions
-Improvements
-Agent
-Linear Agent can now manage inbox notifications
-Asks
-Email intake threads can now be resolved and unresolved
-Asks
-Synced comment threads (Slack and Asks) can now be resolved and unresolved, and a new reply reopens a resolved thread
-Comments
-Added inline issue description comments on iOS, including highlights in the description, tap-to-scroll to the thread, and quoted text above description comments
-Desktop
-Added support for Cmd+Z to restore accidentally closed tabs, with timeline-ordered priority and batch restore for bulk close operations
-Diffs
-Added the Diffs inbox as a default home view option
-Diffs
-Improved visibility of auto-merge status in review controls
-Diffs
-Showed failed checks in merge queue removal events
-Diffs
-Showed GitHub force-push events in pull request timelines
-Interface
-Added an Underline links preference under Interface and theme to always underline links in issue descriptions, comments, and documents
-Teams
-Added display options to team member lists for sorting, filtering by member type, and choosing visible columns
-MCP server
-Improved attachment uploads to accept base64 payloads with whitespace or
-data:
-URL prefixes
 Older updates
 Product
 Intake
@@ -1176,7 +1504,7 @@ Security
 Features
 Asks
 Agents
-Coding Sessions
+Cloud Coding Agent
 Customer Requests
 Insights
 Mobile

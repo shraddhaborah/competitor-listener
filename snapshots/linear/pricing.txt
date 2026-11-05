@@ -256,7 +256,7 @@ Security
 Features
 Asks
 Agents
-Coding Sessions
+Cloud Coding Agent
 Customer Requests
 Insights
 Mobile
