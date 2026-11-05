@@ -129,7 +129,7 @@ MCP access
 Included
 Linear Agent
 Included
-Coding sessions
+Cloud coding agent
 **
 Included
 Loops
