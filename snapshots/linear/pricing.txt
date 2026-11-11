@@ -1,4 +1,3 @@
-Pricing – Linear
 Skip to content →
 Product
 Resources
@@ -260,6 +259,7 @@ Cloud Coding Agent
 Customer Requests
 Insights
 Mobile
+Reviews
 Integrations
 Changelog
 Company
@@ -297,3 +297,4 @@ Terms
 Other Policies
 DPA
 AUP
+Pricing – Linear

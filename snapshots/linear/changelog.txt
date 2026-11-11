@@ -1508,6 +1508,7 @@ Cloud Coding Agent
 Customer Requests
 Insights
 Mobile
+Reviews
 Integrations
 Changelog
 Company
