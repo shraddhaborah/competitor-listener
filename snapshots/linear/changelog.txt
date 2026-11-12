@@ -18,6 +18,117 @@ From the team
 From the community
 Press
 Search…
+November 12, 2026
+Bring your own key (BYOK)
+You can now bring your own key to Linear’s cloud coding agent and use your existing provider credits and negotiated rates.
+Connect through OpenAI, Anthropic, AWS Bedrock, Azure OpenAI, Claude in Microsoft Foundry, OpenRouter, Vercel, or any gateway that supports the OpenAI Responses or Anthropic Messages API.
+Your provider bills model usage directly, while sandbox runtime uses Linear AI credits. You’ll need an API key, not a ChatGPT or Claude subscription.
+Workspace admins can enable BYOK in
+Settings
+. Available on all current plans. Learn more in our
+documentation
+.
+Fixes
+Agent
+Fixed queued messages to coding agents that exceed the length limit now being truncated instead of showing a data error
+Agent
+Agent conversations keep following new output after you send a message
+Agents
+Coding sessions now show the Latest button after you scroll up inside a long reply
+Agents
+Fixed files that aren’t images or videos can now be attached to agent session messages by dragging them in or using the attach button
+Coding sessions
+Coding sessions now show an error when their sandbox fails to start or the agent doesn’t start a turn instead of looking busy
+Command Menu
+Commands that exactly match your search now rank above an issue with the same title
+Comments
+Guests now see Linear as the author of loop comments, like members do
+GitHub
+Fixed pull requests from branches that put a prefix and underscore before the issue ID, such as
+amy_ENG-123_fix
+, linking to the issue again
+Importer
+Fixed existing invited members, such as SCIM-provisioned users who haven’t logged in yet, can now be chosen when mapping imported users
+Integrations
+Videos with uppercase file extensions, such as
+.MP4
+, embedded in synced Jira content now convert to videos instead of images when no MIME type is known
+Labels
+Hovering labels from a multi-select label group now shows their descriptions
+Linear Agent
+Clicking the Agent button on a diff that has a coding session now opens that session instead of a blank new chat
+Loops
+Fixed workspace admins can now transfer a team loop to another admin who isn’t a member of that team
+Loops
+Fixed Loop replies that sync from Slack ending with a “Sent by” line instead of showing the Loop badge
+Loops
+Loops owned by private teams can now read initiatives led by teams in their scope
+Mobile
+The agent chat list no longer shows coding chats started by Loops
+Reviews
+Your own PRs no longer show in To Review when you request a review from a GitHub team you’re on
+Settings
+Screen readers now announce errors in settings forms
+Teams
+Creating a team that copies another team’s settings now also copies that team’s project labels
+Templates
+Fixed project templates copied with team settings now using the new team instead of the original team
+Improvements
+Agent
+Deleting a Linear Agent chat now asks for confirmation first
+Coding Sessions
+Added Claude Fable 5.2 as a coding session model
+Editor
+PDF attachments show Download in their toolbar again, and Print is in the right-click menu
+Linear Agent
+When you ask the Linear Agent to contact support, it can include screenshots you shared in the conversation
+Linear Agent
+Linear Agent can now subscribe teammates to documents and unsubscribe them
+Linear Agent
+Improved the Linear Agent to set month, quarter, half-year, and year target dates on initiatives
+Linear Agent
+You can now stop Linear while it’s working on a request in a comment thread
+Linear Agent
+Highlighting a skill in the slash menu or hovering a skill mention now shows a preview with its description and creator, and a link to open the skill
+Loops
+Loops with workspace administration turned on can create teams when their owner can, including in workspaces that limit team creation to owners
+Pull Requests
+The Preview button on pull request cards now shows when the preview is behind the latest commit
+Reviews
+The confirmation for queuing or merging a stack now shows a compact tree of the pull requests, with check problems listed inline
+Reviews
+When rerunning a check fails because your connected GitHub or GitLab account lacks permission, the error now names the account and links to your connected account settings
+Keyboard shortcuts
+Tabbing to the document table of contents opens it, and
+Up
+and
+Down
+move between its headings
+AltF10
+moves focus to the toolbar of a selected block, the arrow keys move between them, and
+Escape
+returns to the editor
+API
+fileUpload
+is now permitted with the
+issues:create
+and
+comments:create
+API scopes
+Added support for
+teamCreate
+with
+copySettingsFromTeamId
+to give the new team copies of the source team’s project statuses
+notificationUpdate
+now returns an entity-not-found error when the notification is archived unless it’s sent with other mutations in the same request
+OAuth token requests are now rate limited. Repeated requests with an invalid client secret or very high request rates from one IP receive
+429 temporarily_unavailable
+with a
+Retry-After
+header
+MCP server
+Document and issue description patches made with API keys and app tokens now keep the formatting of unchanged content, such as table column widths and lists
 November 5, 2026
 Mobile Diffs
 Diffs, Linear’s fast and focused review experience, is now available for iOS and Android.
@@ -1427,72 +1538,6 @@ accepts,
 declines,
 3
 marks as duplicate
-July 23, 2026
-Text attribution and agent-assisted editing
-Documents and project descriptions are critical context for your teams and agents.
-You can now edit text with
-Linear Agent
-, and use
-Loops
-to keep docs and project descriptions up-to-date. Author name indicators let you check if text was written by a colleague or added by a loop.
-When editing, changes you make through Linear Agent highlight separately so they’re easy to review. If you need to revert to an earlier version, restore to any previous checkpoint from version history.
-Show author names or open version history from the
-⌘
-/
-Ctrl
-+
-K
-menu, or in document display options. Learn more in our
-documentation
-.
-Refreshed issue sidebar
-⁠
-The issue sidebar now closely integrates issue properties with the main content. We’ve pinned Diffs to the top of this panel so you can access the issue’s pull requests from anywhere on the page.
-Fixes
-Asks
-Fixed issues created through Slack Asks ignoring a chosen template’s default status
-Comments
-The resolved comments menu no longer appears when there are no resolved comments
-Diffs
-Submit review flyouts now properly close when clicking outside them
-GitHub
-Prevented revert pull requests from reopening issues linked to another GitHub repository
-GitHub
-Fixed linking GitHub pull requests to issues via pasted URLs.
-Initiatives
-Fixed oversized initiative titles
-Integrations
-Fixed a bug where removing a linked GitHub pull request disconnecting GitHub issue sync
-Integrations
-Fixed Slack project channel setup retrying after a project was deleted or archived
-Settings
-Fixed IP restrictions not appearing when searching for “IP” in settings
-Slack
-Fixed truncated issue summaries in Slack unfurls
-Views
-Fixed view filters (like
-Cmd/Ctrl
-F
-filtering) resetting when navigating to an item in a split view list
-Improvements
-Editor
-Added Backspace navigation from empty issue descriptions and document bodies back to the title
-Issues
-Improved issue composer to suggest templates as a quick suggestion, surfaced before other suggestions because they apply a bundle of issue properties
-Projects
-Added a way to view a project’s issues filtered by a specific milestone from the project overview on iOS
-Triage
-Added triage responsibility to the triage screen on iOS, showing who is responsible for incoming issues and letting you manage the action and responsible members
-Diffs
-“Quick to review” now shows up for slightly larger PRs and also appears for the author of the PR
-API
-Added
-bodyData
-to GraphQL pull request comments
-CycleCreate
-and
-CycleUpdate
-now prevent overlapping schedules and validate neighboring cycles using their dates.
 Older updates
 Product
 Intake

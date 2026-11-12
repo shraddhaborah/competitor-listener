@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-11-12T15:07:19+00:00",
+  "generated_at": "2026-11-12T23:35:03+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-12T23:35:03+00:00",
+      "competitor": "Vercel",
+      "page": "Pricing",
+      "url": "https://vercel.com/pricing",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (2 lines added, 2 removed).",
+      "details": [
+        "+ The perfect starting place for your web app.",
+        "+ Our Hobby plan is free and a great way to get started. Pro is designed for professional developers, freelancers, and businesses who need enh",
+        "- The perfect starting place for your web app or personal project."
+      ],
+      "source": "rules",
+      "lines_added": 2,
+      "lines_removed": 2,
+      "alerted": true
+    },
+    {
+      "detected_at": "2026-11-12T23:35:01+00:00",
+      "competitor": "Linear",
+      "page": "Changelog",
+      "url": "https://linear.app/changelog",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (88 lines added, 51 removed).",
+      "details": [
+        "+ November 12, 2026",
+        "+ Bring your own key (BYOK)",
+        "- July 23, 2026"
+      ],
+      "source": "rules",
+      "lines_added": 88,
+      "lines_removed": 51,
+      "alerted": true
+    },
     {
       "detected_at": "2026-11-12T15:07:19+00:00",
       "competitor": "Supabase",
@@ -198,27 +234,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-12T15:07:16+00:00",
+      "checked_at": "2026-11-12T23:34:59+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-12T15:07:17+00:00",
+      "checked_at": "2026-11-12T23:35:00+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-12T15:07:17+00:00",
+      "checked_at": "2026-11-12T23:35:01+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-12T15:07:18+00:00",
+      "checked_at": "2026-11-12T23:35:01+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-12T15:07:18+00:00",
+      "checked_at": "2026-11-12T23:35:03+00:00",
       "ok": true
     }
   }
