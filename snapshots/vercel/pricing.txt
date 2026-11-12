@@ -621,9 +621,11 @@ New
 eve
 New
 Core Platform
-CI/CD
-Content Delivery
+Build and deploy
+Vercel CI
+New
 Fluid Compute
+Content Delivery
 Observability
 Security
 Platform Security

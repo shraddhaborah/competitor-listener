@@ -6,7 +6,7 @@ Solutions
 Pricing
 Docs
 Blog
-114.8K
+114.9K
 Sign in
 Start your project
 Main menu
@@ -513,7 +513,7 @@ Remove Supabase branding from emails
 Not included in
 free
 Auth Audit Logs
-1 hour
+24 hours
 Basic Multi-Factor Auth
 Included in
 free
@@ -753,7 +753,7 @@ Not included in
 Included in
 Auth Audit Logs
 About Auth Audit Logs
-1 hour
+24 hours
 7 days
 28 days
 Included in
