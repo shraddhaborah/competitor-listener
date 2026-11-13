@@ -1,3 +1,4 @@
+Pricing – Linear
 Skip to content →
 Product
 Resources
@@ -92,6 +93,10 @@ Customer requests
 Included
 API and webhook access
 Included
+API rate limits
+Standard limits
+2x standard limits
+5x standard limits
 Import and export
 Included
 Triage
@@ -297,4 +302,3 @@ Terms
 Other Policies
 DPA
 AUP
-Pricing – Linear
