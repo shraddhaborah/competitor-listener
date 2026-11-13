@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-12T23:35:03+00:00",
+  "generated_at": "2026-11-13T06:37:32+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-13T06:37:31+00:00",
+      "competitor": "Notion",
+      "page": "Pricing",
+      "url": "https://www.notion.com/pricing",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (5 lines added, 6 removed).",
+      "details": [
+        "+ If you believe you've made a mistake signing up for a paid Notion subscription online or in-app, you can request a refund.",
+        "+ Message support",
+        "- Our refund policy is simple. If you believe you've made a mistake signing up for a paid Notion subscription online or in-app, please contact"
+      ],
+      "source": "rules",
+      "lines_added": 5,
+      "lines_removed": 6,
+      "alerted": true
+    },
     {
       "detected_at": "2026-11-12T23:35:03+00:00",
       "competitor": "Vercel",
@@ -234,27 +252,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-12T23:34:59+00:00",
+      "checked_at": "2026-11-13T06:37:28+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-12T23:35:00+00:00",
+      "checked_at": "2026-11-13T06:37:29+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-12T23:35:01+00:00",
+      "checked_at": "2026-11-13T06:37:30+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-12T23:35:01+00:00",
+      "checked_at": "2026-11-13T06:37:31+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-12T23:35:03+00:00",
+      "checked_at": "2026-11-13T06:37:31+00:00",
       "ok": true
     }
   }
