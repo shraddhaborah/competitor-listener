@@ -95,8 +95,8 @@ API and webhook access
 Included
 API rate limits
 Standard limits
-2x standard limits
-5x standard limits
+2× standard
+5× standard
 Import and export
 Included
 Triage

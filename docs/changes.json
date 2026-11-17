@@ -1,6 +1,42 @@
 {
-  "generated_at": "2026-11-17T07:50:24+00:00",
+  "generated_at": "2026-11-17T20:51:21+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-17T20:51:21+00:00",
+      "competitor": "Vercel",
+      "page": "Pricing",
+      "url": "https://vercel.com/pricing",
+      "category": "pricing",
+      "importance": "high",
+      "summary": "Pricing-related text changed (8 lines added, 8 removed).",
+      "details": [
+        "+ Starting at $0.023 per GB",
+        "+ Starting at $0.35 per 1M",
+        "- $0.023 per GB"
+      ],
+      "source": "rules",
+      "lines_added": 8,
+      "lines_removed": 8,
+      "alerted": true
+    },
+    {
+      "detected_at": "2026-11-17T20:51:19+00:00",
+      "competitor": "Linear",
+      "page": "Pricing",
+      "url": "https://linear.app/pricing",
+      "category": "positioning",
+      "importance": "low",
+      "summary": "Minor copy change (2 lines added, 2 removed).",
+      "details": [
+        "+ 2× standard",
+        "+ 5× standard",
+        "- 2x standard limits"
+      ],
+      "source": "rules",
+      "lines_added": 2,
+      "lines_removed": 2,
+      "alerted": false
+    },
     {
       "detected_at": "2026-11-13T19:37:53+00:00",
       "competitor": "Linear",
@@ -269,27 +305,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-17T07:50:21+00:00",
+      "checked_at": "2026-11-17T20:51:18+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-17T07:50:22+00:00",
+      "checked_at": "2026-11-17T20:51:19+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-17T07:50:23+00:00",
+      "checked_at": "2026-11-17T20:51:20+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-17T07:50:23+00:00",
+      "checked_at": "2026-11-17T20:51:20+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-17T07:50:24+00:00",
+      "checked_at": "2026-11-17T20:51:21+00:00",
       "ok": true
     }
   }
