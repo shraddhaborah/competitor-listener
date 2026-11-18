@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-17T20:51:21+00:00",
+  "generated_at": "2026-11-18T07:21:41+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-18T07:21:40+00:00",
+      "competitor": "Notion",
+      "page": "Pricing",
+      "url": "https://www.notion.com/pricing",
+      "category": "feature",
+      "importance": "medium",
+      "summary": "Substantial content change (7 lines added, 9 removed).",
+      "details": [
+        "+ If you’re using a Free Plan workspace, you’ll be able to add a limited number of blocks before you have to upgrade.",
+        "+ Your paid subscription renews automatically until you cancel it. If you subscribed through Notion on desktop or web, go to",
+        "- If you’re using a Free Plan workspace by yourself, you’ll be able to add as many pages and blocks as you like."
+      ],
+      "source": "rules",
+      "lines_added": 7,
+      "lines_removed": 9,
+      "alerted": true
+    },
     {
       "detected_at": "2026-11-17T20:51:21+00:00",
       "competitor": "Vercel",
@@ -305,27 +323,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-17T20:51:18+00:00",
+      "checked_at": "2026-11-18T07:21:38+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-17T20:51:19+00:00",
+      "checked_at": "2026-11-18T07:21:39+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-17T20:51:20+00:00",
+      "checked_at": "2026-11-18T07:21:39+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-17T20:51:20+00:00",
+      "checked_at": "2026-11-18T07:21:40+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-17T20:51:21+00:00",
+      "checked_at": "2026-11-18T07:21:41+00:00",
       "ok": true
     }
   }
