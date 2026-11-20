@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-19T20:30:13+00:00",
+  "generated_at": "2026-11-20T07:08:16+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-20T07:08:16+00:00",
+      "competitor": "Supabase",
+      "page": "Pricing",
+      "url": "https://supabase.com/pricing",
+      "category": "pricing",
+      "importance": "high",
+      "summary": "Pricing-related text changed (20 lines added, 16 removed).",
+      "details": [
+        "+ 115.2K",
+        "+ Free projects are paused after 1 week of inactivity.",
+        "- 115.1K"
+      ],
+      "source": "rules",
+      "lines_added": 20,
+      "lines_removed": 16,
+      "alerted": true
+    },
     {
       "detected_at": "2026-11-18T07:21:40+00:00",
       "competitor": "Notion",
@@ -323,27 +341,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-19T20:30:11+00:00",
+      "checked_at": "2026-11-20T07:08:14+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-19T20:30:11+00:00",
+      "checked_at": "2026-11-20T07:08:14+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-19T20:30:12+00:00",
+      "checked_at": "2026-11-20T07:08:15+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-19T20:30:12+00:00",
+      "checked_at": "2026-11-20T07:08:15+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-19T20:30:12+00:00",
+      "checked_at": "2026-11-20T07:08:15+00:00",
       "ok": true
     }
   }
