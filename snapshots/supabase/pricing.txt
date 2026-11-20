@@ -1092,10 +1092,11 @@ Careers
 General Availability
 Legal Hub
 Privacy Policy
-Privacy Settings
 Acceptable Use Policy
 Humans.txt
 Lawyers.txt
 Security.txt
 Contact Us
 © Supabase Inc
+—
+Do Not Sell or Share My Personal Information

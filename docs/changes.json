@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-20T07:08:16+00:00",
+  "generated_at": "2026-11-20T20:08:46+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-20T20:08:46+00:00",
+      "competitor": "Supabase",
+      "page": "Pricing",
+      "url": "https://supabase.com/pricing",
+      "category": "positioning",
+      "importance": "low",
+      "summary": "Minor copy change (2 lines added, 1 removed).",
+      "details": [
+        "+ —",
+        "+ Do Not Sell or Share My Personal Information",
+        "- Privacy Settings"
+      ],
+      "source": "rules",
+      "lines_added": 2,
+      "lines_removed": 1,
+      "alerted": false
+    },
     {
       "detected_at": "2026-11-20T07:08:16+00:00",
       "competitor": "Supabase",
@@ -341,27 +359,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-20T07:08:14+00:00",
+      "checked_at": "2026-11-20T20:08:43+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-20T07:08:14+00:00",
+      "checked_at": "2026-11-20T20:08:44+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-20T07:08:15+00:00",
+      "checked_at": "2026-11-20T20:08:44+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-20T07:08:15+00:00",
+      "checked_at": "2026-11-20T20:08:45+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-20T07:08:15+00:00",
+      "checked_at": "2026-11-20T20:08:45+00:00",
       "ok": true
     }
   }
