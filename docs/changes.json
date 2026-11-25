@@ -1,6 +1,22 @@
 {
-  "generated_at": "2026-11-25T08:25:21+00:00",
+  "generated_at": "2026-11-25T21:38:16+00:00",
   "changes": [
+    {
+      "detected_at": "2026-11-25T21:38:15+00:00",
+      "competitor": "Notion",
+      "page": "Pricing",
+      "url": "https://www.notion.com/pricing",
+      "category": "positioning",
+      "importance": "low",
+      "summary": "Minor copy change (0 lines added, 4 removed).",
+      "details": [
+        "- More ways to try Notion"
+      ],
+      "source": "rules",
+      "lines_added": 0,
+      "lines_removed": 4,
+      "alerted": false
+    },
     {
       "detected_at": "2026-11-25T08:25:20+00:00",
       "competitor": "Notion",
@@ -394,27 +410,27 @@
   "status": {
     "linear/pricing": {
       "url": "https://linear.app/pricing",
-      "checked_at": "2026-11-25T08:25:18+00:00",
+      "checked_at": "2026-11-25T21:38:14+00:00",
       "ok": true
     },
     "linear/changelog": {
       "url": "https://linear.app/changelog",
-      "checked_at": "2026-11-25T08:25:18+00:00",
+      "checked_at": "2026-11-25T21:38:14+00:00",
       "ok": true
     },
     "notion/pricing": {
       "url": "https://www.notion.com/pricing",
-      "checked_at": "2026-11-25T08:25:18+00:00",
+      "checked_at": "2026-11-25T21:38:15+00:00",
       "ok": true
     },
     "vercel/pricing": {
       "url": "https://vercel.com/pricing",
-      "checked_at": "2026-11-25T08:25:20+00:00",
+      "checked_at": "2026-11-25T21:38:15+00:00",
       "ok": true
     },
     "supabase/pricing": {
       "url": "https://supabase.com/pricing",
-      "checked_at": "2026-11-25T08:25:21+00:00",
+      "checked_at": "2026-11-25T21:38:16+00:00",
       "ok": true
     }
   }
