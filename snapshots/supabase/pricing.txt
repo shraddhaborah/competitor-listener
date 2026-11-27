@@ -6,7 +6,7 @@ Solutions
 Pricing
 Docs
 Blog
-115.5K
+115.6K
 Sign in
 Start your project
 Dashboard
@@ -112,7 +112,6 @@ HIPAA available as paid add-on
 SSO for Supabase Dashboard
 Supports AWS PrivateLink
 Priority email support & SLAs
-Supports AWS PrivateLink
 Daily backups stored for 14 days
 28-day log retention
 Enterprise
@@ -124,6 +123,7 @@ Technical Account Management
 Uptime SLAs
 24×7×365 premium enterprise support
 Private Slack channel
+Supports AWS PrivateLink
 Custom Security Questionnaires
 Compare Plans
 Learn how billing works
